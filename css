@@ -1,0 +1,98 @@
+/* Hoja de estilos: styles.css */
+
+/* Grid 1: Dos columnas iguales */
+.gridOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* Espaciado opcional */
+}
+
+/* Grid 2: Tres columnas, tercera columna doble de ancho */
+.gridTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 10px;
+}
+.gridTwo-col1 {
+  background-color: red;
+  padding: 10px;
+}
+.gridTwo-col2 {
+  background-color: blue;
+  padding: 10px;
+}
+.gridTwo-col3 {
+  background-color: yellow;
+  padding: 10px;
+}
+
+/* Grid 3: Dos filas, segunda fila 3 veces la altura */
+.gridThree {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  width: 500px;
+  height: 300px;
+  gap: 10px;
+}
+.gridThree-row1 {
+  background-color: lightgray;
+  padding: 10px;
+}
+.gridThree-row2 img {
+  width: 500px;
+  height: 225px;
+  object-fit: cover; /* Evita distorsión de la imagen */
+}
+
+/* Grid 4: Dos filas con cuadrícula anidada en la segunda fila */
+.gridFour {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 500px;
+  background-color: green;
+  color: white;
+  gap: 10px;
+}
+#gridFour-row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+/* Grid 5: Dos filas con cuadrícula anidada de imágenes en la segunda fila */
+.gridFive {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 500px;
+  gap: 10px;
+}
+.gridFive-row2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Primera imagen doble de ancho */
+}
+.gridFive-row2 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Grid 6: Dos columnas, segunda columna triple de ancho */
+.gridSix {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 500px;
+  background-color: lightgray;
+  align-items: center;
+  gap: 10px;
+}
+.gridSix i {
+  font-size: 48px; /* Icono más grande */
+  text-align: center;
+}
+.gridSix p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  /* La fuente Roboto de Google se aplica al párrafo */
+}

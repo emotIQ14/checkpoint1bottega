@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Assignment</title>
+  <!-- Google Font para GridSix -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <!-- Hoja de estilo externa -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Grid 1: Dos columnas de igual tamaño con dos párrafos -->
+  <div class="gridOne">
+    <p>Hello World</p>
+    <p style="color: blue;">My Fantastic Content</p> <!-- Segundo párrafo en color azul usando estilo inline -->
+  </div>
+
+  <!-- Grid 2: Tres columnas, tercera columna doble de ancho -->
+  <div class="gridTwo">
+    <div class="gridTwo-col1">
+      <p>Contenido 1</p>
+    </div>
+    <div class="gridTwo-col2">
+      <p>Contenido 2</p>
+    </div>
+    <div class="gridTwo-col3">
+      <p>Contenido 3</p>
+    </div>
+  </div>
+
+  <!-- Grid 3: Dos filas, segunda fila 3 veces la altura de la primera -->
+  <div class="gridThree">
+    <div class="gridThree-row1">
+      <p>Texto en la primera fila.</p>
+    </div>
+    <div class="gridThree-row2">
+      <!-- Imagen de ejemplo; se ajusta a 500×225 con object-fit para no distorsionarse -->
+      <img src="https://images.unsplash.com/photo-1483721310020-03333e577078" alt="Imagen de ejemplo">
+    </div>
+  </div>
+
+  <!-- Grid 4: Dos filas con cuadrícula anidada en la segunda fila -->
+  <div class="gridFour">
+    <div class="gridFour-row1">
+      <p>Ejemplo de cuadrícula anidada.</p>
+    </div>
+    <div id="gridFour-row2">
+      <p>Anidado 1</p>
+      <p>Anidado 2</p>
+    </div>
+  </div>
+
+  <!-- Grid 5: Similar a Grid 4 pero la segunda fila tiene dos imágenes -->
+  <div class="gridFive">
+    <div class="gridFive-row1">
+      <p>Imágenes en cuadrícula anidada.</p>
+    </div>
+    <div class="gridFive-row2">
+      <!-- Dos imágenes de ejemplo; la primera será el doble de ancho que la segunda -->
+      <img src="https://images.unsplash.com/photo-1511642272820-3e654d5c9bfd" alt="Imagen 1">
+      <img src="https://images.unsplash.com/photo-1478562855950-47e80130ed22" alt="Imagen 2">
+    </div>
+  </div>
+
+  <!-- Grid 6: Dos columnas, segunda columna triple de ancho; incluye icono y párrafo -->
+  <div class="gridSix">
+    <!-- Se usa un icono de Font Awesome -->
+    <i class="fas fa-star"></i>
+    <p>Este es un párrafo con fuente de Google.</p>
+  </div>
+</body>
+</html>
